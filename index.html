@@ -6,11 +6,29 @@
     <meta name="description" content="Java Quest: aplicativo web interactivo para aprender y practicar Java por niveles." />
     <title>Java Quest</title>
 
-    <!-- Tailwind por CDN para que las clases usadas en el JSX funcionen sin configuración adicional. -->
+    <!--
+      Este proyecto usa Vite. No abras este archivo con doble clic.
+      Para probarlo localmente usa: npm install && npm run dev
+      Para Vercel, sube el proyecto completo a GitHub y configura el build con Vite.
+    -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="JavaQuest.jsx"></script>
+    <noscript>Necesitas activar JavaScript para ejecutar Java Quest.</noscript>
+
+    <div id="root">
+      <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0f172a;color:white;font-family:Arial,sans-serif;padding:24px;text-align:center;">
+        <div style="max-width:680px;">
+          <h1 style="font-size:32px;margin-bottom:12px;">Cargando Java Quest...</h1>
+          <p style="font-size:16px;line-height:1.6;color:#cbd5e1;">
+            Si abriste este archivo con doble clic y la aplicación no carga, no es un error del componente JSX.
+            Este proyecto debe ejecutarse con Vite usando <strong>npm install</strong> y <strong>npm run dev</strong>,
+            o desplegarse en Vercel desde el repositorio completo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
